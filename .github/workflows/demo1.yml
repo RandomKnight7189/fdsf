@@ -13,7 +13,7 @@ jobs:
     - name: Build the Docker image
       run: docker build . -t uday723/devops-lab:latest
       # Replace 'your-dockerhub-username' with your Docker Hub username
-      working-directory: Dockerfile # Replace this with the directory containing your Dockerfile
+      working-directory: . # Replace this with the directory containing your Dockerfile
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v1
